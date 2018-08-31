@@ -1,10 +1,10 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "fantasydata_wrapper/version"
+require "fantasydata/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "fantasydata_wrapper"
+  spec.name          = "fantasydata"
   spec.version       = FantasyData::VERSION
   spec.authors       = ["Artemish"]
   spec.email         = ["mitch.cro@gmail.com"]

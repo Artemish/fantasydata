@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "fantasydata_wrapper"
+require "fantasydata"
 require "webmock/rspec"
 
 RSpec.configure do |config|
