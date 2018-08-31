@@ -13,3 +13,8 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+VCR.configure do |c|
+  c.cassette_library_dir = "spec/fixtures"
+  c.hook_into :webmock
+end
