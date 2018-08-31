@@ -6,8 +6,8 @@ module FantasyData
       include FantasyData::API::Utils
       include FantasyData::API::Endpoints
 
-      def current_season
-        response = get(CURRENT_SEASON)
+      def self.current_season
+        get(CURRENT_SEASON)
       end
     end
   end
