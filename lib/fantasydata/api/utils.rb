@@ -1,6 +1,8 @@
 require 'faraday'
 require 'json'
 
+require 'fantasydata/api/secrets'
+
 API_BASE = "https://api.fantasydata.net/v3/mlb/"
 DATA_FORMAT = "json"
 
@@ -11,11 +13,11 @@ module FantasyData
 
       def get(endpoint)
         conn = Faraday.new(:url => endpoint)
-        conn.get do |req|
+        response = conn.get do |req|
           req.headers['Ocp-Apim-Subscription-Key'] = API_KEY
         end
 
-        return JSON.parse(response)
+        return JSON.parse(response.body)
       end
     end
 
