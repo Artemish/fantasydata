@@ -5,13 +5,13 @@ require "fantasydata_wrapper/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "fantasydata_wrapper"
-  spec.version       = FantasydataWrapper::VERSION
+  spec.version       = FantasyData::VERSION
   spec.authors       = ["Artemish"]
   spec.email         = ["mitch.cro@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Wrapper for the FantasyData sports API.}
+  spec.description   = %q{Wraps FantasyData APIs into a Ruby gem.}
+  spec.homepage      = "http://example.com"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -35,4 +35,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "webmock"
+  spec.add_development_dependency "vcr"
+
+  spec.add_dependency "faraday"
+  spec.add_dependency "json"
 end

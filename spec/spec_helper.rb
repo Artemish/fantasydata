@@ -1,5 +1,6 @@
 require "bundler/setup"
 require "fantasydata_wrapper"
+require "webmock/rspec"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
