@@ -1,28 +1,21 @@
 # FantasyData
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fantasydata`. To experiment with that code, run `bin/console` for an interactive prompt.
+Encapsulates FantasyData's API in a rubygem, currently focusing on the MLB data API
 
-TODO: Delete this and the text above, and describe your gem
+Done for web-dev experience
+
+Looking too closely may induce trauma for those well-versed in Ruby
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'fantasydata'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install fantasydata
+Not on RubyGems yet - this has been [done
+before](https://github.com/Drosty/fantasydata), but it only includes the NFL
+APIs and it's three years old. The design (as far as I can tell) is very good,
+and lot of my design is inspired by it.
 
 ## Usage
 
-TODO: Write usage instructions here
+Not working yet :)
 
 ## Development
 
@@ -32,7 +25,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/fantasydata.
+Bug reports and pull requests are welcome on GitHub at https://github.com/artemish/fantasydata.
 
 ## License
 
